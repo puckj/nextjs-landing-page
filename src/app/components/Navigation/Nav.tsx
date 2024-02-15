@@ -3,7 +3,11 @@ import React from "react";
 import Button from "../Button";
 import { Bars3BottomRightIcon } from "@heroicons/react/16/solid";
 
-const Nav = () => {
+interface Props {
+  displayNavHandler: () => void;
+}
+
+const Nav = ({ displayNavHandler }: Props) => {
   return (
     <div className="h-[12vh] bg-white shadow-md">
       <div className="w-[85%] flex items-center justify-between mx-auto h-[12vh]">
@@ -31,7 +35,10 @@ const Nav = () => {
         <div className="flex items-center space-x-2 md:space-x-5">
           <Button text="Login" color="blue" />
           <Button text="Sign up" color="red" />
-          <Bars3BottomRightIcon className="w-[1.5rem] lg:hidden h-[1.5rem] text-slate-900 cursor-pointer" />
+          <Bars3BottomRightIcon
+            onClick={displayNavHandler}
+            className="w-[1.5rem] lg:hidden h-[1.5rem] text-slate-900 cursor-pointer"
+          />
         </div>
       </div>
     </div>
