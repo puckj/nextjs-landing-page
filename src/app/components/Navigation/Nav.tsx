@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Button from "../Button";
+import Button from "../Button/Button";
 import { Bars3BottomRightIcon } from "@heroicons/react/16/solid";
 
 interface Props {

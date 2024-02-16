@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import HeroImg from "../../../public/images/hero.svg";
+import Button from "../Button/Button";
+import HeroImg from "../../../../public/images/hero.svg";
 import Image from "next/image";
 
 const Hero = () => {
