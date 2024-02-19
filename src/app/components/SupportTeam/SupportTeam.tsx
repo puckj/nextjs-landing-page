@@ -45,7 +45,7 @@ const SupportTeam = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-anchor-placemetn="top-center">
           <Image src={SupportTeamImg} alt="support" />
         </div>
       </div>

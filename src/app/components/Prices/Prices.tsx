@@ -13,13 +13,26 @@ const Prices = () => {
         className="w-[80%] mx-auto grid pt-[6rem] gap-[2rem] lg:gap-0 grid-cols-1 
       md:grid-cols-2 lg:grid-cols-3 items-center"
       >
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
           <PriceCard bg="bg-[#81124a]" price="19.99" num="1" plan="Starter" />
         </div>
-        <div>
-          <PriceCard bg="bg-[#22840c]" price="29.99" num="2" plan="Premium Pack" />
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="200"
+        >
+          <PriceCard
+            bg="bg-[#22840c]"
+            price="29.99"
+            num="2"
+            plan="Premium Pack"
+          />
         </div>
-        <div>
+        <div
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="400"
+        >
           <PriceCard bg="bg-[#112c60]" price="39.99" num="3" plan="Ultimate" />
         </div>
       </div>

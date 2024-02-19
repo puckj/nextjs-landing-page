@@ -15,9 +15,13 @@ const Features = () => {
         className="pt-[5rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
       items-center gap-[1.4rem]"
       >
-        {featuresData.map((item, index) => (
-          <FeatureCard featureData={item} key={index} />
-        ))}
+        {featuresData.map((item, index) => {
+          return (
+            <div key={index} data-aos="zoom-in" data-aos-delay={index * 200}>
+              <FeatureCard featureData={item} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
